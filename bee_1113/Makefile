@@ -6,7 +6,7 @@ UNITY = ../Unity/src/unity.c
 
 all:	$(TEST)
 
-test_%.x:	test_%.c
+test_%.x:	test_*.c
 		$(CC) $< $(UNITY) -o $@ -lm
 		./$@
 		rm $@
